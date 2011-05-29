@@ -1,0 +1,10 @@
+#!/bin/sh
+while true;
+do
+    if [ -z "$(pgrep -f lintnode)" ];
+    then
+        echo starting lint node
+        nohup node app.js&
+    fi
+    sleep 15
+done
