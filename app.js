@@ -147,7 +147,7 @@ app.post('/example/ok', function (req, res) {
 
 
 function parseCommandLine() {
-  var port_index = process.ARGV.indexOf('--port');
+  var port_index = process.argv.indexOf('--port');
   if (port_index > -1) {
     jslint_port = process.ARGV[port_index + 1];
   }
